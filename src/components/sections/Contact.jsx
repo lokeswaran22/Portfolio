@@ -23,15 +23,39 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Simulate form submission
         setFormStatus('sending');
-        setTimeout(() => {
-            setFormStatus('success');
-            setFormData({ name: '', email: '', subject: '', message: '' });
-            setTimeout(() => setFormStatus(''), 3000);
-        }, 1500);
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/imlokeswaran@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    subject: formData.subject,
+                    message: formData.message
+                })
+            });
+
+            if (response.ok) {
+                setFormStatus('success');
+                setFormData({ name: '', email: '', subject: '', message: '' });
+                setTimeout(() => setFormStatus(''), 5000);
+            } else {
+                console.error("Form submission failed");
+                alert("Something went wrong. Please try again or email me directly.");
+                setFormStatus('');
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Error sending message. Please check your connection.");
+            setFormStatus('');
+        }
     };
 
     const contactInfo = [
