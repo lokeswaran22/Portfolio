@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokeswaran - Resume</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.5;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+            color: #000;
+            background-color: #fff;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+
+        /* ATS Friendly Formatting */
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 26pt;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            font-size: 11pt;
+            margin-top: 8px;
+        }
+
+        .contact-info span:not(:last-child)::after {
+            content: " • ";
+            margin: 0 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 14pt;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin: 0 0 12px 0;
+            padding-bottom: 3px;
+            font-weight: bold;
+        }
+
+        .job-entry,
+        .project-entry,
+        .edu-entry {
+            margin-bottom: 15px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 11pt;
+            margin-bottom: 2px;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 12pt;
+        }
+
+        .entry-date {
+            font-weight: bold;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            font-size: 11pt;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            margin: 5px 0 10px 18px;
+            padding: 0;
+            font-size: 11pt;
+        }
+
+        li {
+            margin-bottom: 4px;
+            text-align: justify;
+        }
+
+        .skills-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 8px;
+        }
+
+        .skill-row {
+            font-size: 11pt;
+            line-height: 1.6;
+        }
+
+        .skill-category {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #000;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lokeswaran</h1>
+        <div className="contact-info">
+            <span>imlokeswaran@gmail.com</span>
+            <span>+91 8248372885</span>
+            <span>Tamil Nadu, India</span>
+            <span><a href="https://github.com/lokeswaran22" target="_blank">github.com/lokeswaran22</a></span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <div style="font-size: 11pt; text-align: justify; line-height: 1.6;">
+            Results-driven Software Developer with extensive experience in full-stack engineering, system architecture,
+            and process automation. Specialized in building scalable web applications and optimizing development
+            workflows through robust tooling and infrastructure management. Proven ability to lead technical initiatives
+            and deliver innovative solutions that drive operational efficiency.
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+
+        <div className="job-entry">
+            <div className="entry-header">
+                <span className="entry-title">Software Developer (Associate Lead)</span>
+                <span className="entry-date">March 2025 – Present</span>
+            </div>
+            <div className="entry-subtitle">Pristonix Technologies, Tamil Nadu</div>
+            <ul>
+                <li>Spearheaded the development of a comprehensive <strong>Employee Management System</strong> using
+                    React, Node.js, and MongoDB, implementing secure Role-Based Access Control (RBAC) and RESTful APIs
+                    to track organization-wide productivity.</li>
+                <li>Designed and implemented <strong>automated deployment pipelines</strong> and integration workflows,
+                    significantly reducing release times and manual deployment errors.</li>
+                <li>Developed robust <strong>Python-based internal tools</strong> to automate routine development tasks,
+                    enhancing overall engineering team efficiency.</li>
+                <li>Collaborated with cross-functional teams to architect scalable backend solutions and optimize system
+                    performance for high-traffic environments.</li>
+            </ul>
+        </div>
+
+        <div className="job-entry">
+            <div className="entry-header">
+                <span className="entry-title">Chief Operating Officer</span>
+                <span className="entry-date">May 2023 – Present</span>
+            </div>
+            <div className="entry-subtitle">TrojanX Solutions, Tamil Nadu</div>
+            <ul>
+                <li>Driving operational excellence and strategic execution across all business functions, aligning
+                    technology solutions with business goals.</li>
+                <li>Leading multidisciplinary teams to deliver innovative technical projects, fostering a culture of
+                    continuous improvement and agile delivery.</li>
+                <li>Streamlining organizational processes to improve project delivery timelines and client satisfaction.
+                </li>
+            </ul>
+        </div>
+
+        <div className="job-entry">
+            <div className="entry-header">
+                <span className="entry-title">Figma Intern</span>
+                <span className="entry-date">Feb 2024 – March 2024</span>
+            </div>
+            <div className="entry-subtitle">T4TEQ Software Solutions, Tamil Nadu</div>
+            <ul>
+                <li>Designed user-centric interfaces and interactive prototypes using Figma, ensuring adherence to
+                    modern UI/UX best practices.</li>
+                <li>Collaborated with developers to translate design concepts into functional frontend components.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Projects</h2>
+
+        <div className="project-entry">
+            <div className="entry-header">
+                <span className="entry-title">Intelligent Agriculture Prediction</span>
+                <span className="entry-subtitle">Python, Machine Learning, Web Development</span>
+            </div>
+            <ul>
+                <li>Engineered a predictive model using Decision Tree Classifiers to forecast crop yields based on
+                    complex environmental data points including temperature, humidity, and rainfall.</li>
+                <li>Developed a responsive web interface to visualize data insights, helping users interpret model
+                    predictions effectively.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div className="edu-entry">
+            <div className="entry-header">
+                <span className="entry-title">Bachelor of Engineering in Computer Science</span>
+                <span className="entry-date">2020 – 2024</span>
+            </div>
+            <div className="entry-subtitle">SRM TRP Engineering College, Anna University</div>
+            <div style="font-size: 11pt;">CGPA: 7.97</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div className="skills-section">
+            <div className="skill-row">
+                <span className="skill-category">Programming Languages:</span> JavaScript (ES6+), Python, Java, SQL,
+                HTML5, CSS3
+            </div>
+            <div className="skill-row">
+                <span className="skill-category">Frontend Technologies:</span> React.js, Redux, Tailwind CSS, Bootstrap,
+                Responsive Design
+            </div>
+            <div className="skill-row">
+                <span className="skill-category">Backend & Databases:</span> Node.js, Express.js, MongoDB, MySQL,
+                RESTful API Architecture
+            </div>
+            <div className="skill-row">
+                <span className="skill-category">Tools & Infrastructure:</span> Git, GitHub, VS Code, Postman, Automated
+                Deployment Pipelines, Process Automation
+            </div>
+        </div>
+    </section>
+
+    <a href="javascript:window.print()" className="download-btn no-print">
+        Download PDF
+    </a>
+</body>
+
+</html>
