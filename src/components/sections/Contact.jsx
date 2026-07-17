@@ -44,8 +44,8 @@ const Contact = () => {
         {
             icon: FaPhone,
             label: 'Phone',
-            value: '+91 8248372885',
-            link: 'tel:+918248372885'
+            value: '+91 96268 72686',
+            link: 'tel:+919626872686'
         },
         {
             icon: FaMapMarkerAlt,
