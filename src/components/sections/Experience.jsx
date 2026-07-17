@@ -33,7 +33,7 @@ const Experience = () => {
             id: 1,
             title: 'Software Developer (Associate Lead)',
             company: 'Pristonix Technologies',
-            duration: 'March 2025 - Present',
+            duration: 'March 2025 - April 2026',
             description: 'Leading initiatives in Workflow Automation. Developing tools using Python to streamline development operations and automate publishing workflows.',
             technologies: ['Python', 'Workflow Automation', 'CI/CD'],
             type: 'Full-time'
