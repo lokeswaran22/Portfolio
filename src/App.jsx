@@ -48,7 +48,7 @@ function App() {
         <div className="container">
           <div className="footer-content">
             <p style={{ color: 'var(--color-text-secondary)', textAlign: 'center' }}>
-               All rights reserved © 2026 <br/> Made with <span className="heart-beat">❤️</span> by Lokeswaran | Deployed on <a href="https://trojanx.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', fontWeight: '500' }}>Trojan <span style={{ color: '#ff0000' }}>X</span></a>
+               All rights reserved © 2026 <br/> Made with <span className="heart-beat">❤️</span> by Lokeswaran
             </p>
           </div>
         </div>
